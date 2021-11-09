@@ -90,6 +90,20 @@ try {
         System.err.println(e.getMessage());
     }
 }
+
+// Read & Write version bogosse
+try (FileInputStream fis = new FileInputStream("myfile.png");
+     FileOutputStream fos = new FileOutputStream("copy.png")) {
+    
+    int b = fis.read();
+    while (b != -1) {
+        fos.write(b); // This is a blocking call
+        b = fis.read();
+    }
+    fos.flush(); // Write data to the OS. Always use flush before closing the stream.
+} catch (IOException e) {
+    System.err.println(e.getMessage());
+}
 ```
 
 ### Encoding
