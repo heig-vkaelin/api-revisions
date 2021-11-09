@@ -1,8 +1,8 @@
 # API Test 1
 
 ## Table of contents
-* [JavaIO](#JavaIO)
-	* [Classes available](#Classes-available)
+* [JavaIO](#javaio)
+	* [Classes available](#classes-available)
 	* [Reading / Writing Byte one at the time](#reading--writing-byte-one-at-the-time)
 	* [Encoding](#encoding)
 	* [Reading / Writing Characters one at a time](#reading--writing-characters-one-at-a-time)
@@ -12,14 +12,12 @@
 	* [Pseudo-code Server & client](#pseudo-code-server--client)
 	* [Version single thread](#version-single-thread)
 	* [Version multi thread](#version-multi-thread)
-* Questions
-	* [Questions Java](#questions-java-)
-	* [Questions TCP](#questions-tcp-)
+* [Questions](#questions)
+	* [Questions Java](#questions-java)
+	* [Questions TCP](#questions-tcp)
 
 ## JavaIO
-
 ### Classes available
-
 ```java
 // Import
 import java.io.*;
@@ -638,7 +636,8 @@ public class Client {
     }
 }
 ```
-### QUESTIONS JAVA :
+## Questions
+### Questions Java
 **Why can we say that the Java IO API is a universal API?**
 
 L'API Java IO est universelle, car elle peut être utilisée dès qu'il y a un transfert de données, que ce soit des bytes ou des caractères.
@@ -663,7 +662,7 @@ NIK
 Parce que cela permet d'augmenter les performances du programme. En effet, au lieu de lire caractère par caractère et de sans arrêt faire des opérations sur le disque dur pour lire ou écrire les données et traverser toute la pile, on gère bloc par bloc et on réduit le nombre de couches à traverser et fait moins d'opérations. Cela cause toute fois un petit délai, c'est pourquoi on utilise flush().
 
 
-### QUESTIONS TCP : 
+### Questions TCP
 **When writing a network client in Java, you have created a socket and established a connection with a TCP server. The variable mySocket holds a reference to this socket. How can you send bytes to the server?**
 
 Il faut récupérer l'OutputStream du socket en créant une instance de la classe `FileOutputStream` ou en récupérant une instance déjà existante avec `mySocket.getOutputStream()`. On peut maintenant y envoyer des bytes.
