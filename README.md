@@ -627,3 +627,63 @@ public class Client {
     }
 }
 ```
+### QUESTIONS JAVA :
+- *Why can we say that the Java IO API is a universal API?*
+
+L'API Java IO est universelle, car elle peut être utilisée dès qu'il y a un transfert de données, que ce soit des bytes ou des caractères.
+
+- *Explain the notions of source, sink and stream in context of IO processing.*
+
+Une source génère une séquence de bytes ou de caractères. 
+
+Un évier consomme une séquence de bytes ou de caractères.
+
+Un stream est un tube qui permet le transfert de données entre une source et un évier. Un InpuStream si on lit, un OutputStream si on écrit.
+
+- *What is the difference between an  InputStream  and a  Reader ?*
+On utilise un Reader quand on manipule des caractères, elle fait une conversion entre les données brutes binaires et les caractères avec un encodage spécifique. C'est une classe abstraite. L'InputStream quant à lui est utilisé quand on utilise des bytes, des données RAW.
+
+
+- *Write a program that reads the content of a file A, converts all characters to uppercase and writes
+the result into a file B.*
+
+
+- *Why is it better to read blocks of bytes in a single operation, instead of reading a single byte
+multiple times?*
+
+Parce que cela permet d'augmenter les performances du programme. En effet, au lieu de lire caractère par caractère et de sans arrêt faire des opérations sur le disque dur pour lire ou écrire les données et traverser toute la pile, on gère bloc par bloc et on réduit le nombre de couches à traverser et fait moins d'opérations. Cela cause toute fois un petit délai, c'est pourquoi on utilise flush().
+
+
+
+### QUESTIONS TCP : 
+- *When writing a network client in Java, you have created a socket and established a connection with a TCP server. The variable mySocket holds a reference to this socket. How can you send bytes to the server?*
+
+Il faut récupérer l'OutputStream du socket en créant une instance de la classe `FileOutputStream` ou en récupérant une instance déjà existante avec `mySocket.getOutputStream()`. On peut maintenant y envoyer des bytes.
+
+- *When writing a network server in Java, you want to bind a socket to port 2367 and accept at most 4 connection requests. How do you do that?*
+
+Une boucle while avec 4 itérations ?
+
+- *What is the difference between a process and a thread?*
+Process: 
+Process means any program is in execution. Process control block controls the operation of any process. Process Control Block(PCB) contains information about processes for example process priority, process id, process state, CPU, register, etc. A process can creates other processes which are known as Child Processes. Process takes more time to terminate and it is isolated means it does not share memory with any other process. 
+
+Thread: 
+Thread is the segment of a process means a process can have multiple threads and these multiple threads are contained within a process. A thread have 3 states: running, ready, and blocked. 
+
+The process can have the following states like new, ready, running, waiting, terminated, suspended.
+
+- *Describe 4 different ways to handle concurrency in TCP servers.*
+
+1. Multiple Process, Single Thread - Blocking Server
+	À chaque nouveau client accepté, un nouveau processus est fork depuis le processus principal. Le processus principal continue sa tâche d'attente de client pendant que l'enfant s'occupe du client. 
+2. Single Process, Multiple Thread - Blocking Server
+	À chaque nouveau client, un nouveau thread est créé. Il s'occupera du client fraîchement connecté, tandis que le receptionniste retournera à sa tâche d'accueillir les clients.
+3. Single Process, Single Thread - Non-blocking (multiplexing) - assigning multiple clients to a waiter
+4. Single Process, Single Thread - Non-blocking (asynchronous) - getnumber -> work on lab -> gets called -> work on lab -> get food
+
+- *Explain the difference between a synchronous and an asynchronous function call.*
+
+1. synchronous = chaque client est dans une fille d'attente et ne peut rien faire en attendant
+2. asynchronous = chaque client exécute son code de son côté et reçoit des évènements.
+
