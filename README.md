@@ -1,17 +1,17 @@
-# API
+# API Test 1
 
 ## Table of contents
 * [JavaIO](#JavaIO)
-* [Classes available](#Classes-available)
-* [Reading / Writing Byte one at the time](#reading--writing-byte-one-at-the-time)
-* [Encoding](#encoding)
-* [Reading / Writing Characters one at a time](#reading--writing-characters-one-at-a-time)
-* [Buffered IOs](#buffered-ios)
-* [Universal API example](#universal-api-example)
+	* [Classes available](#Classes-available)
+	* [Reading / Writing Byte one at the time](#reading--writing-byte-one-at-the-time)
+	* [Encoding](#encoding)
+	* [Reading / Writing Characters one at a time](#reading--writing-characters-one-at-a-time)
+	* [Buffered IOs](#buffered-ios)
+	* [Universal API example](#universal-api-example)
 * [TCP Programming](#tcp-programming)
-* [Pseudo-code Server & client](#pseudo-code-server--client)
-* [Version single thread](#version-single-thread)
-* [Version multi thread](#version-multi-thread)
+	* [Pseudo-code Server & client](#pseudo-code-server--client)
+	* [Version single thread](#version-single-thread)
+	* [Version multi thread](#version-multi-thread)
 
 ## JavaIO
 
