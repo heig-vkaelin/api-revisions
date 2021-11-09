@@ -97,7 +97,7 @@ try {
 Can't specify encoding with `FileReader`, need to use `InputStreamReader`
 
 ```java
-InputStreamReader reader = new **InputStreamReader**(new FileInputStream(file), "UTF-8");
+InputStreamReader reader = new InputStreamReader(new FileInputStream(file), "UTF-8");
 // is safer than
 Reader reader = new FileReader(file); // what is the “default” encoding???
 ```
