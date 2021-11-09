@@ -3,7 +3,7 @@
 ## Table of contents
 * [JavaIO](#JavaIO)
 * [Classes available](#Classes-available)
-* [Reading / Writing Byte one at the time](#Reading-/-Writing-**Byte**-one-at-the-time)
+* [Reading / Writing Byte one at the time](#Reading-/-Writing-Byte-one-at-the-time)
 
 ## JavaIO
 
