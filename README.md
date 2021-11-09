@@ -12,6 +12,9 @@
 	* [Pseudo-code Server & client](#pseudo-code-server--client)
 	* [Version single thread](#version-single-thread)
 	* [Version multi thread](#version-multi-thread)
+* Questions
+	* [Questions Java](#questions-java-)
+	* [Questions TCP](#questions-tcp-)
 
 ## JavaIO
 
