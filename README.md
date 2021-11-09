@@ -692,6 +692,6 @@ The process can have the following states like new, ready, running, waiting, ter
 
 **Explain the difference between a synchronous and an asynchronous function call.**
 
-1. synchronous = chaque client est dans une fille d'attente et ne peut rien faire en attendant
+1. synchronous = chaque client est dans une file d'attente et ne peut rien faire en attendant
 2. asynchronous = chaque client exécute son code de son côté et reçoit des évènements.
 
