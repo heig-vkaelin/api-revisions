@@ -1,9 +1,9 @@
 # API
 
 ## Table of contents
-* [JavaIO](##JavaIO)
-* [Classes available](###Classes-available)
-TODO MORE
+* [JavaIO](#JavaIO)
+* [Classes available](#Classes-available)
+* [Reading / Writing Byte one at the time](#Reading-/-Writing-**Byte**-one-at-the-time)
 
 ## JavaIO
 
