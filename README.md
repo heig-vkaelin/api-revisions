@@ -254,7 +254,7 @@ try {
     String line;
     while ((line = in.readLine()) != null) {
         out.write(line + "\n");
-				out.flush();
+	out.flush();
     }
 } catch (IOException e) {
     System.err.println(e.getMessage());
