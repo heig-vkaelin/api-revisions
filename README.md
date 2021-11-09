@@ -311,7 +311,7 @@ public interface INicelyDesignedService {
 4. Close the client socket
 ```
 
-![Untitled](API%203055d3bf19be4b38a49781a1a0d5a78a/Untitled.png)
+![Diagram](Diagram.png)
 
 ### Version single thread
 
