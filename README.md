@@ -656,6 +656,7 @@ On utilise un Reader quand on manipule des caractères, elle fait une conversion
 
 **Write a program that reads the content of a file A, converts all characters to uppercase and writes the result into a file B.**
 
+NIK
 
 **Why is it better to read blocks of bytes in a single operation, instead of reading a single byte multiple times?**
 
@@ -672,6 +673,7 @@ Il faut récupérer l'OutputStream du socket en créant une instance de la class
 Une boucle while avec 4 itérations ?
 
 **What is the difference between a process and a thread?**
+
 Process: 
 Process means any program is in execution. Process control block controls the operation of any process. Process Control Block(PCB) contains information about processes for example process priority, process id, process state, CPU, register, etc. A process can creates other processes which are known as Child Processes. Process takes more time to terminate and it is isolated means it does not share memory with any other process. 
 
