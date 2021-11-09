@@ -670,7 +670,7 @@ Il faut récupérer l'OutputStream du socket en créant une instance de la class
 
 **When writing a network server in Java, you want to bind a socket to port 2367 and accept at most 4 connection requests. How do you do that?**
 
-Une boucle while avec 4 itérations ?
+Une boucle while avec 4 itérations ? Un compteur ?
 
 **What is the difference between a process and a thread?**
 
